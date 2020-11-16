@@ -369,7 +369,7 @@ img {
     border-radius: 0.5rem;
   }
 }
-/* ===== PORTFOLIO =====*/
+/* ===== WORK =====*/
 .work {
   &__container {
     row-gap: 2rem;
@@ -384,6 +384,7 @@ img {
 
     img {
       width: 100%;
+      height: 100%;
     }
 
     &::after {
