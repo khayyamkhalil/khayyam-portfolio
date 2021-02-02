@@ -372,10 +372,10 @@
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
-
         <div class="contact__container bd-grid">
+
           <form name="contact" action="POST" data-netlify="true" class="contact__form">
-            <input type="text" name="name" placeholder="Name" class="contact__input" required/>
+            <!-- <input type="text" name="name" placeholder="Name" class="contact__input" required/>
             <input type="email" name="name" placeholder="Email" class="contact__input" required/>
             <textarea
               name=""
@@ -386,12 +386,15 @@
             ></textarea>
             <div data-netlify-recaptcha="true"></div> 
             <button type="submit" class="contact__button button">Submit</button>
-            <!-- <input
-              type="button"
-              value="Submit"
-              class="contact__button button"
-            /> -->
+          </form> -->
+
+          <form name="contact" method="POST" data-netlify="true" class="contact__form">
+              <input type="text" name="name" placeholder="Name" class="contact__input" />   
+              <input type="email" name="email" placeholder="Email" class="contact__input" />
+              <textarea name="message" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+              <button type="submit" class="contact__button button" >Send</button>
           </form>
+
         </div>
       </section>
     </main>
